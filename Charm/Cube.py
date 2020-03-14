@@ -63,7 +63,7 @@ class Charm(object):
         else:
             self.Dk = numpy.loadtxt('..\\CAREM\\CUBEM\\Resultados_direct_173.dat')
 
-    def Euler(self, _dt, _N):
+    def Euler(self, _dt, _N, order=2):
         self.St = numpy.zeros((_N, 2))
         if not self.__Initialized:
             self._initial_condition()
@@ -73,13 +73,13 @@ class Charm(object):
         for _n in range(1, _N):
             self.St[_n, 1] = self.St[_n - 1, 1] + \
                              (self.Bet * self.nuFis * self.St[_n - 1, 0] - self.lmk * self.St[_n - 1, 1]) * _dt
-            self._Actualizar_Paso(_n, _dt)
+            self._Actualizar_Paso(_n, _dt, order=order)
 
         self.Solution = self.St[:, 0]
         self.t = numpy.linspace(0, _N * _dt, _N)
         return
 
-    def ExponentialMethod(self, _dt, _N):
+    def ExponentialMethod(self, _dt, _N, order=2):
         self.St = numpy.zeros((_N, 2))
         if not self.__Initialized:
             self._initial_condition()
@@ -89,13 +89,13 @@ class Charm(object):
         for _n in range(1, _N):
             self.St[_n, 1] = self.St[_n - 1, 1] * numpy.exp(-self.lmk * _dt) + \
                              (1 - numpy.exp(-self.lmk * _dt)) / self.lmk * (self.Bet * self.nuFis * self.St[_n - 1, 0])
-            self._Actualizar_Paso(_n, _dt)
+            self._Actualizar_Paso(_n, _dt, order=order)
 
         self.Solution = self.St[:, 0]
         self.t = numpy.linspace(0, _N * _dt, _N)
         return
 
-    def RungeKutta(self, _dt, _N):
+    def RungeKutta(self, _dt, _N, order=2):
         self.St = numpy.zeros((_N, 2))
         if not self.__Initialized:
             self._initial_condition()
@@ -106,7 +106,7 @@ class Charm(object):
             k1 = (self.Bet * self.nuFis * self.St[_n - 1, 0] - self.lmk * self.St[_n - 1, 1])
             k2 = (self.Bet * self.nuFis * self.St[_n - 1, 0] - self.lmk * (self.St[_n - 1, 1] + k1 * _dt))
             self.St[_n, 1] = self.St[_n - 1, 1] + (k1 + k2) / 2 * _dt
-            self._Actualizar_Paso(_n, _dt)
+            self._Actualizar_Paso(_n, _dt, order=order)
 
         self.Solution = self.St[:, 0]
         self.t = numpy.linspace(0, _N * _dt, _N)

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Convergence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestPlots.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cube.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cube.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestPlots.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.Convergence">
+  <component name="RunManager" selected="Python.TestPlots">
     <configuration name="Convergence" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,6 +74,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="TestPlots" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Charm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\pablo\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestPlots.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestPlots" />
         <item itemvalue="Python.Convergence" />
         <item itemvalue="Python.Cube" />
       </list>
@@ -114,7 +132,19 @@
       <option name="presentableId" value="Default" />
       <updated>1583463246919</updated>
     </task>
+    <task id="LOCAL-00001" summary="Convergencia de los esquemas">
+      <created>1584206885124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584206885124</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Convergencia de los esquemas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Convergencia de los esquemas" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="17" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583537632770">
@@ -125,6 +155,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="90" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1583894650293" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1584206882220">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584206882220" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1583553885744">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
