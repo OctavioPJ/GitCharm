@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cube.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cube.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestPlots.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584206885124</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Convergencia de los esquemas">
+      <created>1584208136465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584208136465</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,10 +160,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="90" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1583894650293" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1584206882220">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1584208134815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584206882220" />
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584208134815" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1583553885744">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
