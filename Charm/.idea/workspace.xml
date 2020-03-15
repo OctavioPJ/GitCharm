@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="Animacion">
+    <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Convergence.py" beforeDir="false" afterPath="$PROJECT_DIR$/Convergence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cube.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cube.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestOrders.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestOrders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestPlots.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +40,14 @@
       <recent name="C:\Users\pablo\Desktop\GitCharm\Charm" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scratch">
+  <component name="RunManager" selected="Python.TestPlots">
     <configuration name="Convergence" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\pablo\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -140,6 +144,9 @@
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\pablo\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -156,9 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scratch" />
-        <item itemvalue="Python.TestOrders" />
         <item itemvalue="Python.TestPlots" />
+        <item itemvalue="Python.TestOrders" />
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.Convergence" />
         <item itemvalue="Python.Cube" />
       </list>
@@ -203,15 +210,34 @@
       <option name="project" value="LOCAL" />
       <updated>1584232915035</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Animacion">
+      <created>1584247096293</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584247096293</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -220,7 +246,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Convergencia de los esquemas" />
     <MESSAGE value="Se añade el archivo TestOrders, hay un comportamiento oscilatiorio dentro el esquema Runge Kutta para tfinal=3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se añade el archivo TestOrders, hay un comportamiento oscilatiorio dentro el esquema Runge Kutta para tfinal=3" />
+    <MESSAGE value="Animacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Animacion" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Notifications" timestamp="1584233267350">
@@ -235,62 +262,62 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="90" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1583894650293" />
-    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1584246958176">
+    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1584247094246">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584246958176" />
+    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584247094246" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1584211914922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584211914922" />
-    <state width="1344" height="217" key="GridCell.Tab.0.bottom" timestamp="1584200537717">
+    <state width="1344" height="217" key="GridCell.Tab.0.bottom" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584200537717" />
-    <state width="1344" height="217" key="GridCell.Tab.0.center" timestamp="1584200537717">
+    <state width="1344" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.0.center" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584200537717" />
-    <state width="1344" height="217" key="GridCell.Tab.0.left" timestamp="1584200537717">
+    <state width="1344" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.0.left" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584200537717" />
-    <state width="1344" height="217" key="GridCell.Tab.0.right" timestamp="1584200537717">
+    <state width="1344" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.0.right" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584200537717" />
-    <state width="1344" height="217" key="GridCell.Tab.1.bottom" timestamp="1584200537721">
+    <state width="1344" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.1.bottom" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584200537721" />
-    <state width="1344" height="217" key="GridCell.Tab.1.center" timestamp="1584200537721">
+    <state width="1344" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.1.center" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584200537721" />
-    <state width="1344" height="217" key="GridCell.Tab.1.left" timestamp="1584200537717">
+    <state width="1344" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.1.left" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584200537717" />
-    <state width="1344" height="217" key="GridCell.Tab.1.right" timestamp="1584200537721">
+    <state width="1344" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state width="1344" height="217" key="GridCell.Tab.1.right" timestamp="1584247509919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584200537721" />
+    <state width="1344" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1583897274811">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1583897274811" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1584232995703">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1584247109565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584232995703" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584247109565" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1583549631727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1583549631727" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584197316639">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1584297821313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584197316639" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584297821313" />
     <state x="492" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584211938199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

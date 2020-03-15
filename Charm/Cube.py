@@ -121,7 +121,7 @@ class Charm(object):
             else:
                 self.St[_n, 0] = \
                     (self.lmk * self.St[_n, 1] + (self.inv_V / _dt)*(4/3)*self.St[_n-1, 0] - (self.inv_V / _dt)*(1/3)*self.St[_n-2, 0])/\
-                                ((self.inv_V / _dt) + (self.Abs + self.Dif * self.B2 - (1 - self.Bet) * self.nuFis))
+                                ((self.Abs + self.Dif * self.B2 - (1 - self.Bet) * self.nuFis) + self.inv_V / _dt)
         else:
             self.St[_n, 0] = \
                 (self.lmk * self.St[_n, 1] + self.inv_V / _dt * self.St[_n - 1, 0]) / \

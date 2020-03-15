@@ -9,7 +9,7 @@ if __name__ == '__main__':
     final_expon_2 = []
     final_euler_1 = []
 
-    for n in np.logspace(1, 6):
+    for n in np.logspace(1, 5):
         N = int(n)
         print(N)
         dt = tfinal / N
