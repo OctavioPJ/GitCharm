@@ -5,23 +5,25 @@ from Cube import plt
 if __name__ == '__main__':
     tfinal = 10
     alf = Charm()
-    final_euler_2 = []
-    final_euler_1 = []
 
-    for n in np.logspace(1, 5):
-        N = int(n)
+    for N in [1098, 1389]:
         print(N)
         dt = tfinal / N
 
-        alf.Euler(_dt=dt, _N=N)
-        final_value_2 = alf.Solution[-1]
-        final_value = alf.ExpMatrix(alf.t[-1])[0, 1]
-        final_euler_2.append(abs(final_value_2 - final_value))
+        alf.RungeKutta(_dt=dt, _N=2*N)
+        RungeSolution = alf.Solution
+        alf.ExactSolution(alf.t)
+        plt.plot(alf.t, RungeSolution > alf.Solution, '-o', label='Runge Kutta Orden 2 {}'.format(N))
 
-        alf.Euler(_dt=dt, _N=N, order=1)
-        final_value_1 = alf.Solution[-1]
-        final_value = alf.ExpMatrix(alf.t[-1])[0, 1]
-        final_euler_1.append(abs(final_value_1 - final_value))
+        alf.Euler(_dt=dt, _N=2*N, order=1)
+        EulerSolution = alf.Solution
+        alf.ExactSolution(alf.t)
+        plt.plot(alf.t, EulerSolution > alf.Solution, '-o', label='Euler Orden 1 {}'.format(N))
 
-    plt.loglog(np.logspace(1, 5), final_euler_2, 'o')
-    plt.loglog(np.logspace(1, 5), final_euler_1, '-o')
+        alf.Euler(_dt=dt, _N=2 * N, order=2)
+        Euler2Solution = alf.Solution
+        alf.ExactSolution(alf.t)
+        plt.plot(alf.t, Euler2Solution > alf.Solution, '-o', label='Euler Orden 2 {}'.format(N))
+
+        print(alf.t[-1])
+        plt.legend()
