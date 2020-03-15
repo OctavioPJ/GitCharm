@@ -4,7 +4,7 @@ from Cube import numpy as np
 
 if __name__ == '__main__':
 
-    tfinal = 10
+    tfinal = 3
     alf = Charm()
     final_euler = []
     final_runge = []
@@ -16,19 +16,22 @@ if __name__ == '__main__':
         print(N)
         dt = tfinal / N
 
-        alf.Euler(_dt=dt, _N=N)
+        alf.Euler(_dt=dt, _N=2*N)
         final_value_euler = alf.Solution[-1]
-        final_value = alf.ExpMatrix(alf.t[-1])[0,1]
+        # final_value = alf.ExpMatrix(alf.t[-1])[0,1]
+        final_value = alf.ExactSolution(alf.t[-1])
         final_euler.append(abs(final_value_euler-final_value))
 
-        alf.RungeKutta(_dt=dt, _N=N)
+        alf.RungeKutta(_dt=dt, _N=2*N)
         final_value_runge = alf.Solution[-1]
-        final_value = alf.ExpMatrix(alf.t[-1])[0,1]
+        # final_value = alf.ExpMatrix(alf.t[-1])[0,1]
+        final_value = alf.ExactSolution(alf.t[-1])
         final_runge.append(abs(final_value_runge-final_value))
 
-        alf.ExponentialMethod(_dt=dt, _N=N)
+        alf.ExponentialMethod(_dt=dt, _N=2*N)
         final_value_expon = alf.Solution[-1]
-        final_value = alf.ExpMatrix(alf.t[-1])[0, 1]
+        # final_value = alf.ExpMatrix(alf.t[-1])[0, 1]
+        final_value = alf.ExactSolution(alf.t[-1])
         final_expon.append(abs(final_value_expon-final_value))
 
     plt.loglog(np.logspace(1, 5), final_euler, 'o')

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestOrders.py" afterDir="false" />
+    <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="Animacion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Convergence.py" beforeDir="false" afterPath="$PROJECT_DIR$/Convergence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestPlots.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
       <recent name="C:\Users\pablo\Desktop\GitCharm\Charm" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestOrders">
+  <component name="RunManager" selected="Python.scratch">
     <configuration name="Convergence" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,8 +136,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Charm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\pablo\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.TestOrders" />
         <item itemvalue="Python.TestPlots" />
         <item itemvalue="Python.Convergence" />
@@ -177,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584208670865</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se añade el archivo TestOrders, hay un comportamiento oscilatiorio dentro el esquema Runge Kutta para tfinal=3">
+      <created>1584232915035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584232915035</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,9 +219,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Convergencia de los esquemas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Convergencia de los esquemas" />
+    <MESSAGE value="Se añade el archivo TestOrders, hay un comportamiento oscilatiorio dentro el esquema Runge Kutta para tfinal=3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añade el archivo TestOrders, hay un comportamiento oscilatiorio dentro el esquema Runge Kutta para tfinal=3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Notifications" timestamp="1584233267350">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1584233267350" />
     <state x="137" y="17" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583537632770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,10 +235,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="90" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1583894650293" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1584208670007">
+    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1584246958176">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584208670007" />
+    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584246958176" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1584211914922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,6 +279,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1583897274811" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1584232995703">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584232995703" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1583549631727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

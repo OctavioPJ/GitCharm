@@ -1,12 +1,52 @@
 from Cube import Charm
 from Cube import numpy as np
 from Cube import plt
+import matplotlib.animation as animation
 
-if __name__ == '__main__':
-    tfinal = 10
+def update(i, ax, fig):
+    ax.cla()
+    N = int(np.logspace(1, 5)[i])
+    dt = tfinal / N
+    alf.RungeKutta(_dt=dt, _N=N, order=2)
+
+    Numeric = alf.Solution
+    alf.ExactSolution(alf.t)
+    line = ax.plot(alf.t, Numeric - alf.Solution, '-', label=str(N))
+
+    ax.set_ylim(-5, 5)
+    ax.legend()
+    ax.grid(True)
+    return line,
+
+
+def show_oscilations():
     alf = Charm()
 
-    for N in [1098, 1389]:
+    fig = plt.figure()
+    ax = fig.add_subplot(1, 1, 1)
+    # ax.set_xlim(-0.01,0.5)
+
+    tfinal = 3
+    dt = tfinal / 10
+
+    alf.RungeKutta(_dt=dt, _N=10, order=1)
+    Numeric = alf.Solution
+    alf.ExactSolution(alf.t)
+    ax.plot(alf.t, Numeric - alf.Solution, '-o')
+    ax.set_ylim(-6, 6)
+    ani = animation.FuncAnimation(fig, update,
+                                  frames=range(50),
+                                  fargs=(ax, fig), interval=100)
+
+    plt.show()
+    return 0
+
+
+if __name__ == '__main__':
+    tfinal = 3
+    alf = Charm()
+    # [686, 868, 1098, 1389, 1757, 2222, 2811, 3556, 4498, 5689, 7196, 9102, 11513, 14563]
+    for N in [ 3556, 4498]:
         print(N)
         dt = tfinal / N
 
