@@ -3,7 +3,7 @@ from Cube import numpy as np
 from Cube import plt
 
 if __name__ == '__main__':
-    tfinal = 0.5
+    tfinal = 0.05
     alf = Charm()
     final_euler_2 = []
     final_expon_2 = []

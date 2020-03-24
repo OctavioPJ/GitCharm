@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae38c277-f240-4959-bc70-ba84dcce77ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Charm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Charm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cube.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cube.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestOrders.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestOrders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestPlots.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +35,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pablo\Desktop\GitCharm\Charm" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestPlots">
+  <component name="RunManager" selected="Python.TestOrders">
     <configuration name="Convergence" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,6 +107,9 @@
       <module name="Charm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\pablo\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -163,8 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TestPlots" />
         <item itemvalue="Python.TestOrders" />
+        <item itemvalue="Python.TestPlots" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.Convergence" />
         <item itemvalue="Python.Cube" />
@@ -254,10 +259,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1584233267350" />
-    <state x="137" y="17" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583537632770">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="193" y="24" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585014226567">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="137" y="17" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583537632770" />
+    <state x="193" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585014226567" />
     <state x="363" y="90" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583894650293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -302,6 +308,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1344" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584247509919" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1585014221115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585014221115" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1583897274811">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

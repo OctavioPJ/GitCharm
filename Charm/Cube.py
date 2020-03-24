@@ -69,14 +69,16 @@ class Charm(object):
             self._initial_condition()
 
         self.St[0, :] = self.u0
-
+        t = 0.0
+        self.t = [t]
         for _n in range(1, _N):
             self.St[_n, 1] = self.St[_n - 1, 1] + \
                              (self.Bet * self.nuFis * self.St[_n - 1, 0] - self.lmk * self.St[_n - 1, 1]) * _dt
             self._Actualizar_Paso(_n, _dt, order=order)
-
+            t += _dt
+            self.t.append(t)
         self.Solution = self.St[:, 0]
-        self.t = numpy.linspace(0, _N * _dt, _N)
+        self.t = numpy.array(self.t)
         return
 
     def ExponentialMethod(self, _dt, _N, order=2):
@@ -85,14 +87,16 @@ class Charm(object):
             self._initial_condition()
 
         self.St[0, :] = self.u0
-
+        t = 0.0
+        self.t = [t]
         for _n in range(1, _N):
             self.St[_n, 1] = self.St[_n - 1, 1] * numpy.exp(-self.lmk * _dt) + \
                              (1 - numpy.exp(-self.lmk * _dt)) / self.lmk * (self.Bet * self.nuFis * self.St[_n - 1, 0])
             self._Actualizar_Paso(_n, _dt, order=order)
-
+            t += _dt
+            self.t.append(t)
         self.Solution = self.St[:, 0]
-        self.t = numpy.linspace(0, _N * _dt, _N)
+        self.t = numpy.array(self.t)
         return
 
     def RungeKutta(self, _dt, _N, order=2):
@@ -101,15 +105,17 @@ class Charm(object):
             self._initial_condition()
 
         self.St[0, :] = self.u0
-
+        t = 0.0
+        self.t = [t]
         for _n in range(1, _N):
             k1 = (self.Bet * self.nuFis * self.St[_n - 1, 0] - self.lmk * self.St[_n - 1, 1])
             k2 = (self.Bet * self.nuFis * self.St[_n - 1, 0] - self.lmk * (self.St[_n - 1, 1] + k1 * _dt))
             self.St[_n, 1] = self.St[_n - 1, 1] + (k1 + k2) / 2 * _dt
             self._Actualizar_Paso(_n, _dt, order=order)
-
+            t += _dt
+            self.t.append(t)
         self.Solution = self.St[:, 0]
-        self.t = numpy.linspace(0, _N * _dt, _N)
+        self.t = numpy.array(self.t)
         return
 
     def _Actualizar_Paso(self, _n, _dt, order=2):
@@ -120,8 +126,8 @@ class Charm(object):
                     ((self.Abs + self.Dif * self.B2 - (1 - self.Bet) * self.nuFis) + self.inv_V / _dt)
             else:
                 self.St[_n, 0] = \
-                    (self.lmk * self.St[_n, 1] + (self.inv_V / _dt)*(4/3)*self.St[_n-1, 0] - (self.inv_V / _dt)*(1/3)*self.St[_n-2, 0])/\
-                                ((self.Abs + self.Dif * self.B2 - (1 - self.Bet) * self.nuFis) + self.inv_V / _dt)
+                    (self.lmk * self.St[_n, 1] + (self.inv_V / _dt)*2*self.St[_n-1, 0] - (self.inv_V / _dt)*(1/2)*self.St[_n-2, 0])/\
+                                ((self.Abs + self.Dif * self.B2 - (1 - self.Bet) * self.nuFis) + (3/2)*(self.inv_V / _dt))
         else:
             self.St[_n, 0] = \
                 (self.lmk * self.St[_n, 1] + self.inv_V / _dt * self.St[_n - 1, 0]) / \
